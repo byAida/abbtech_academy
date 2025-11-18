@@ -1,5 +1,4 @@
-package lesson9;
-import java.util.Objects;
+package homework9;
 
 public class Book {
     private String title;

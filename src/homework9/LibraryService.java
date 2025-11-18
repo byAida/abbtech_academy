@@ -1,6 +1,5 @@
-package lesson9;
+package homework9;
 
-import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
