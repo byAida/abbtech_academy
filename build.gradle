@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'war'
 }
 
 group = 'com.example'
@@ -14,10 +15,15 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'javax.servlet:javax.servlet-api:4.0.1'
-    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.0'
+    implementation 'org.glassfish:javax.servlet.jsp.jstl:1.2.0'
     compileOnly 'org.apache.tomcat:tomcat-servlet-api:9.0.30'
 }
 
 test {
     useJUnitPlatform()
+}
+
+war {
+    archiveFileName = 'task19.war'
 }
